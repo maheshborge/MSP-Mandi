@@ -1003,10 +1003,6 @@ function onStateChange(){
     districts.map(d => `<option value="${d}">${d}</option>`).join("");
 }
 
-function doGet(e){
-  return ContentService.createTextOutput("TEST_A_SCRIPT_RUNNING");
-}
-
 function onDistrictChange(){
   const state = su_state.value;
   const district = su_district.value;
@@ -2031,4 +2027,5 @@ function closeCSNModal(){
 </body>
 
 </html>
+
 
